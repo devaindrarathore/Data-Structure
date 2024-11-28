@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr[10]={1,2,3,4,5,6,7,8};
+    int removeIndex;
+    int removeItem;
+    int sizee=8;
+    cout<<"Enter index to delete element: ";
+    cin>>removeIndex;
+    for(int i=removeIndex;i<7 ;i++)
+    {
+        removeItem=arr[i];
+        arr[i]=arr[i+1];
+    }
+    sizee--;
+    cout<<"Elements of array: ";
+    for(int i=0; i<sizee; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    cout<<"Removed element is: "<<removeItem;
+    cout<<sizeof(arr);
+    return 0;
+}
