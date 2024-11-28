@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int Size;
+    int arr[50];
+    cout<<"Enter number of elements: ";
+    cin>>Size;
+    for (int i=0; i<Size; i++)
+    {
+        cout<<"Enter element "<<i+1<<" : ";
+        cin>>arr[i];
+    }
+
+    int maximum=arr[0];
+    for(int i=0; i<Size; i++)
+    {
+        if (arr[i] >= maximum)
+            maximum=arr[i];
+    }
+    cout<<"Maximum element: "<<maximum;
+    return 0;
+}
